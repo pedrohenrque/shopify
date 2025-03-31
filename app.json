@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "shopfy",
-    "slug": "shopfy",
+    "name": "shopify",
+    "slug": "shopify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
