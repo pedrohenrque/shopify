@@ -61,9 +61,9 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="profile"
+        name="account"
         options={{
-          title: 'Profile',
+          title: 'Account',
           tabBarIcon: ({ color }) => (
             <ExpoIcon iconSet="AntDesign" name="user" size={24} color={color} />
           )
