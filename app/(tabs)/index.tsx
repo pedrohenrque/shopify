@@ -1,9 +1,10 @@
-import { Text, View } from 'react-native'
+import { SafeAreaContainer } from '@/components/SafeAreaContainer'
+import { Dashboard } from '@/modules/dashboard/dashboard.view'
 
 export default function Home() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>HOME</Text>
-    </View>
+    <SafeAreaContainer>
+      <Dashboard />
+    </SafeAreaContainer>
   )
 }

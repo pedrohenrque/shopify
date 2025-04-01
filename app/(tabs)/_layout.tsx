@@ -2,7 +2,7 @@ import { Tabs } from 'expo-router'
 import React from 'react'
 import { Platform } from 'react-native'
 
-import { ExpoIcon } from '@/components/ui/expoIcon'
+import { ExpoIcon } from '@/components/ExpoIcon'
 import { Colors } from '@/constants/Colors'
 import { useColorScheme } from '@/hooks/useColorScheme'
 

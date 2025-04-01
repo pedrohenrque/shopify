@@ -1,25 +1,21 @@
-import { ExpoIcon } from '@/components/ui/expoIcon'
-import { useTheme } from '@/hooks/useTheme'
+import { SearchInput } from '@/components'
 import { Text, View } from 'react-native'
+import { InboxIcon, NotificationIcon } from './components/icons'
 import { styles } from './dashboard.styles'
 
 export function Dashboard() {
-  const { colors } = useTheme()
-
   return (
     <View style={styles.container}>
-      <View>
-        <Text>Shopify</Text>
+      <View style={styles.headerContainer}>
+        <Text style={styles.headerText}>Shopify</Text>
 
-        <View>
-          <ExpoIcon
-            iconSet="Ionicons"
-            name="notifications-outline"
-            color={colors.icon}
-            size={22}
-          />
+        <View style={styles.iconContent}>
+          <InboxIcon hasNewNotification />
+          <NotificationIcon hasNewNotification />
         </View>
       </View>
+
+      <SearchInput />
     </View>
   )
 }

@@ -1,19 +1,21 @@
 import * as Icons from '@expo/vector-icons'
 import React from 'react'
-import { View } from 'react-native'
+import { StyleProp, View, ViewStyle } from 'react-native'
 
 interface IconProps {
   name: string
   size?: number
   color?: string
   iconSet: keyof typeof Icons
+  style?: StyleProp<ViewStyle>
 }
 
 export function ExpoIcon({
   name = 'home',
   size,
   color,
-  iconSet = 'AntDesign'
+  iconSet = 'AntDesign',
+  style
 }: IconProps) {
   const IconSetComponent = (Icons as any)[iconSet]
 
@@ -23,7 +25,7 @@ export function ExpoIcon({
   }
 
   return (
-    <View>
+    <View style={style}>
       <IconSetComponent name={name} size={size} color={color} />
     </View>
   )
